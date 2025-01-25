@@ -1,6 +1,6 @@
 const ingredients = {
     lowerbun: 'burger-images/Ingredients/Lower-Bun.png',
-    cheese: 'burger-images/Ingredients/cheese.png',
+    cheese: 'burger-images/Ingredients/Cheese.png',
     topbun: 'burger-images/Ingredients/Upper-Bun.png',
     mayo: 'burger-images/Ingredients/Mayo.png',
     burgermeat: 'burger-images/Ingredients/Meat.png',
