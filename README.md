@@ -3,5 +3,7 @@ This is a simple web-based burger making game 🍔 called Nuha's Burgers. You pi
 
 I also designed and created all the assets in the game myself.
 
+Here's the link where this is being hosted: https://nuhanishat.github.io/Nuhas-Burgers/
+
 Here's a preview of what it looks like: 
 ![image](https://github.com/user-attachments/assets/20e53232-780e-4e85-95e3-063608c7a3c6)
