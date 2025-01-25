@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuha's Burger Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- This is the top element containing the shop name -->
+    <div class="shop-name">
+        <img id="logo" src="./burger-images/Shop-Name.png" alt="logo">
+    </div>
+
+    <div class="all-holders">
+        <!-- This is the burger holder -->
+        <div class="burger-holder", id="burgerHolder">
+            <h1> Assemble your burger by picking Ingredients!</h1>
+            <img class="burg-image" src="./burger-images/Ingredients/Plate.png">
+
+        </div>
+        
+        <!-- This is the Ingredient holder -->
+        <div class="ingredient-holder">
+            <h1> Ingredients</h1>
+            <div class="left-buttons">
+                <div class="button-image-container" data-ingredient="lowerbun">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Lower Bun</h1></span>
+                </div>
+                <div class="button-image-container" data-ingredient="cheese">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Cheese</h1></span>
+                </div> 
+                <div class="button-image-container" data-ingredient="topbun">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Top Bun</h1></span>
+                </div>
+                <div class="button-image-container" data-ingredient="mayo">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Mayonnaise</h1></span>
+                </div>
+                <div class="button-image-container" data-ingredient="burgermeat">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Burger Meat</h1></span>
+                </div>
+                <div class="button-image-container" data-ingredient="lettuce">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Lettuce</h1></span>
+                </div>
+                <div class="button-image-container" data-ingredient="tomatoes">
+                    <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                    <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                    <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                    <span><h1>Tomatoes</h1></span>
+                </div>          
+            </div>   
+        </div>
+        <!-- This is the extras -->
+        <div class="extras">
+            <h1> Extras </h1>
+            <div class="right-buttons">
+                    <div class="button-image-container" data-ingredient="onions">
+                        <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                        <span><h1>Onions</h1></span>
+                    </div>
+                    <div class="button-image-container" data-ingredient="mushrooms">
+                        <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                        <span><h1>Mushrooms</h1></span>
+                    </div>
+                    <div class="button-image-container" data-ingredient="pickles">
+                        <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                        <span><h1>Pickles</h1></span>
+                    </div>                   
+                    <div class="button-image-container" data-ingredient="egg">
+                        <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                        <span><h1>Egg</h1></span>
+                    </div>
+                    <div class="button-image-container" data-ingredient="ketchup">
+                        <img class="button-image" src="./burger-images/Buttons/button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/Button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/Button-clicked.png" alt="Clicked Button">
+                        <span><h1>Ketchup</h1></span>
+                    </div>
+                    <div class="button-image-container" id="resetButton" data-ingredient="reset">
+                        <img class="button-image" src="./burger-images/Buttons/reset-button.png" alt="Default Button">
+                        <img class="button-image-hover" src="./burger-images/Buttons/reset-button-hover.png" alt="Hover Button">
+                        <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/reset-button-clicked.png" alt="Clicked Button">
+                        <span><h1>Reset</h1></span>
+                    </div>
+            </div>
+        </div>
+        <!-- This is the price -->
+        <div class="price">
+            <h1> Price </h1> 
+            <div class="receipt" id="receiptArea">
+                <h1 class="price-display">Regular:  $14.00</h1>
+                <div class="display-area" id="displayArea"></div>
+                <div class="extras-price" id="extrasPrice">
+                    <h1>Extras:</h1>
+                </div>               
+            </div>
+            <div class="button-image-container" id="doneButton" data-ingredient="done">
+                <img class="button-image" src="./burger-images/Buttons/done-button.png" alt="Default Button">
+                <img class="button-image-hover" src="./burger-images/Buttons/done-button-hover.png" alt="Hover Button">
+                <img class="button-image-clicked" id= "clickedButton" src="./burger-images/Buttons/done-button-clicked.png" alt="Clicked Button">
+                <span><h1>Complete Order!</h1></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>© Copyright 2025 by Nuha Nishat</p> 
+    </footer>
+</body>
+</html>

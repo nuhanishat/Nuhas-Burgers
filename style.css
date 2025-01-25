@@ -1,0 +1,233 @@
+body{
+    font-family: "Sour Gummy", serif;
+    background-color: #FF4654;
+    color: white;
+}
+
+.shop-name {
+    height: 150px;
+    width:100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#logo {
+    width: 400px;
+}
+
+.all-holders{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+    height: 700px;
+}
+
+.ingredient-holder{
+    background-color: #E71827;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.burger-holder{
+    width: 40%;
+    height:100%;
+    position: relative;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.burg-image{
+    width: 80%;
+    position: absolute;
+    object-fit: contain;
+    transform: translate(40px, 470px);
+}
+
+.button-image-container{
+    width: 100%;
+    height: 30%;
+    position: relative;              
+    cursor: pointer;
+    margin:0;
+    padding:0;
+    
+}
+
+.button-image-container > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+    margin: 0px;
+    
+    
+}
+
+.left-buttons, .right-buttons {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: flex-start;
+    column-gap: 0px;
+    padding: 30px;
+    align-items: center;
+    object-fit: contain;
+    transform: translate(-5%, -5%);
+    
+}
+
+
+/* img[class = "button-image hover"], img[class = "button-image clicked"]{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    transition: opacity 0.1s ease;
+} */
+
+.button-image-hover, .button-image-clicked {
+    display: none;
+}
+
+/*.button-image-container:hover .button-image{
+    opacity: 0;
+}
+
+.button-image-container:hover .button-image-hover{
+    opacity: 1;
+}
+
+.button-image-clicked.active {
+    opacity: 1;
+}
+*/
+
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 60%;
+    font-family: "Sour Gummy", serif;
+    font-weight: 700;
+    color: black;
+}
+
+
+
+#doneButton {
+    width: 50%;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 70px;
+    padding: 0;
+    transform: translate(15%, 0%);
+    
+}
+
+#doneButton > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%,40%);
+}
+
+
+.extras{
+    background-color: #E71827;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.receipt{
+    width: 80%;
+    height: 900px;
+    background-color: wheat;
+    margin-left: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 8px;
+    
+  
+}
+
+.price-display{
+    color:black;
+    
+}
+
+#resetButton{
+    width: 45%;
+    margin: 15px;
+    margin-top: 0;
+}
+
+#resetButton > span{
+    transform: translate(-35%, -25%);
+}
+
+.extras-price > h1 {
+    color: green;
+    text-align: center;
+}
+
+.ingredient {
+    width: 100%;
+    height: 100px;
+    background-size: contain; /* Ensure the image fits within the div */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the image */
+    transition: top 0.1s;
+    object-fit: contain;
+
+}
+
+.display-area {
+    margin: 0; /* Space above display area */
+    opacity: 0; /* Start invisible for transition effect */
+    transition: opacity 0.5s ease; /* Smooth fade-in effect */ 
+}
+
+.display-area.show{
+    opacity: 1;
+}
+
+.extras-display {
+    margin-top: 0px; /* Space above display area */
+    opacity: 1; /* Start invisible for transition effect */
+    transition: opacity 0.5s ease; /* Smooth fade-in effect */ 
+}
+
+.total{
+    margin-top: 30px;
+    color: black;
+    height: 100px;
+    width: 100%;
+    font-weight: 800;
+}
